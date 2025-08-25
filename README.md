@@ -4,6 +4,7 @@ Dosya ve klasör yönetimi için geliştirilmiş, React (Vite + TypeScript) taba
 
 ### İçindekiler
 - Proje Yapısı
+- Ekran Görüntüleri
 - Kurulum
 - Çalıştırma
 - Ortam Değişkenleri
@@ -19,6 +20,13 @@ FILEMANAGER_APP/
   server/      # Express, Multer, JWT, Archiver
   README.md
 ```
+
+### Ekran Görüntüleri
+<p align="center">
+  <img src="https://ozguryurt.dev/images/projeler/filemanager_1.png" alt="FileManager 1" width="45%" />
+  <img src="https://ozguryurt.dev/images/projeler/filemanager_2.png" alt="FileManager 2" width="45%" />
+  
+</p>
 
 ### Kurulum
 Terminalde proje kök dizininde aşağıdaki adımları izleyin.
