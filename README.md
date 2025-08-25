@@ -53,7 +53,7 @@ npm run dev
 Geliştirme sunucusu: Vite çıktısındaki yerel adres `http://localhost:5173`.
 
 ### Ortam Değişkenleri
-Sunucu tarafında `dotenv` kuruludur ancak mevcut kod JWT gizli anahtarını ve portu dosya içinde sabit kullanır. İhtiyaç halinde aşağıdakiler gibi bir `.env` dosyası tanımlayabilir ve kodu buna göre güncelleyebilirsiniz:
+Sunucu tarafında `dotenv` kuruludur ancak mevcut kod JWT gizli anahtarını ve portu app.js içinde sabit kullanır. İhtiyaç halinde aşağıdakiler gibi bir `.env` dosyası tanımlayabilir ve kodu buna göre güncelleyebilirsiniz:
 ```
 PORT=5000
 JWT_SECRET=your-secret
