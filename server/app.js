@@ -8,8 +8,11 @@ const cors = require("cors")
 const archiver = require("archiver");
 const jwt = require("jsonwebtoken");
 
-const app = express();
+// Uygulama ayarları (.env olarak eklenebilir fakat kodda düzenleme yapılmalı)
 const port = 5000;
+const JWT_SECRET = "zA5$7Nhpuwkft-ALd-HKine4xh}6SS"
+
+const app = express();
 const UPLOADS_DIR = path.join(__dirname, 'uploads');
 const ADMIN_USERNAME = 'admin';
 // SHA256 ile şifrelenmiş password (default: admin)
@@ -18,8 +21,6 @@ const ADMIN_PASSWORD_HASH = "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81
 app.use(cors());
 app.use(express.json());
 app.use('/uploads', express.static(UPLOADS_DIR));
-
-const JWT_SECRET = "zA5$7Nhpuwkft-ALd-HKine4xh}6SS"
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {

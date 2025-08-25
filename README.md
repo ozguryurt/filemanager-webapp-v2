@@ -59,6 +59,21 @@ PORT=5000
 JWT_SECRET=your-secret
 ```
 
+`.env` örnekleri:
+
+- Client: `client/.env`
+  ```
+  VITE_API=http://localhost:5000
+  ```
+  - Prod için örnek: `VITE_API=https://api.yourdomain.com`
+
+- Sunucu (server): `server/.env` (opsiyonel – direkt olarak app.js dosyasından bunları düzenleyebilirsiniz)
+  ```
+  PORT=5000
+  JWT_SECRET=your-secret-key
+  ```
+  - Bu tanımlamaları yaparsanız, sunucu kodunu `.env` değerlerini okuyacak şekilde güncellemeniz gerekecektir.
+
 ### İstemci (client) Komutları
 `client/package.json` içerisinden:
 - `npm run dev`: Geliştirme sunucusunu başlatır.
