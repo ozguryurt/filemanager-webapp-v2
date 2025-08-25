@@ -67,7 +67,7 @@ JWT_SECRET=your-secret
   ```
   - Prod için örnek: `VITE_API=https://api.yourdomain.com`
 
-- Sunucu (server): `server/.env` (opsiyonel – direkt olarak app.js dosyasından bunları düzenleyebilirsiniz)
+- Server: `server/.env` (opsiyonel – direkt olarak app.js dosyasından bunları düzenleyebilirsiniz)
   ```
   PORT=5000
   JWT_SECRET=your-secret-key
